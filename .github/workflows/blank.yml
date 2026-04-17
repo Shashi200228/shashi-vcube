@@ -1,8 +1,11 @@
-name: Hello world
-on: workflow_dispatch
-jobs:
+  name: Hello world
+  on: workflow_dispatch
+ jobs:
   hello:
    runs-on: ubuntu-latest
    steps:
      - name: print hello world
-       run: echo "hello vcube"
+   run:  {
+       echo "hello vcube"  
+       echo "hellow world"
+         }
